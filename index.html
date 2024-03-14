@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="section-logo-alura">
+        <img src="assets/icons/logo_alura.svg" alt="" width="70">
+    </section>
+    <section id="section-encrypt">
+        <div class="content-encrypt">
+            <textarea name="" id="info-input" cols="4" rows="4" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="div-btns">
+                <button class="btn btn-primary" id="btn-encrypt" onclick="encryptCode()">Encriptar</button>
+                <button class="btn btn-secodary" id="btn-des" onclick="decryptCode()">Desencriptar</button>
+            </div>
+        </div>
+    </section>
+    <section id="section-result"> 
+        <div id="result">
+            <div id="content-empty">
+                <img src="assets/icons/niño.svg" alt="niño">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>
+                    Ingrese el texto que desees encriptar o desencriptar
+                </p>
+            </div>
+            <div id="content-result" style="display: none;">
+                <div id="result-encrypt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit atque officiis veniam sed, corrupti cupiditate eum, exercitationem animi est soluta explicabo sit ullam odio nisi aut placeat, blanditiis laborum fuga?
+                    Commodi dolorem, labore, enim repellendus, repudiandae sit veritatis debitis quasi error molestiae quisquam beatae in nisi officiis quod cum expedita ratione porro laborum voluptate nam necessitatibus illum aliquid. Quas, voluptatem!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe libero praesentium voluptatum laboriosam ipsum doloribus. Quas quaerat consequuntur cum distinc
+                </div>
+                <button class="btn-copy btn-secodary" onclick="copyCode()">Copiar</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+

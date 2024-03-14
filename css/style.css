@@ -1,0 +1,259 @@
+body{
+    background: #e5e5e5;
+    display: flex;
+}
+
+#section-logo-alura{
+    margin-top: 2rem;
+}
+
+#section-encrypt{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-encrypt .content-encrypt{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 90%;
+}
+
+.content-encrypt textarea{
+    resize: none;
+    border: none;
+    width: 95%;
+    height: 75%;
+    margin: 0 3rem;
+    font-size: 1.4rem;
+    color: #0a3871;
+    background: transparent;
+}
+
+textarea::placeholder{
+    color: #0a3871;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.div-btns{
+    width: 100%;
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section-result{
+    width: 30%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result{
+    margin-right: 10px;
+    width: 95%;
+    height: 95%;
+    background: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-empty img{
+    width: 85%;
+}
+
+#content-empty h3{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#content-empty p{
+    padding: 5px 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#content-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 94%;
+}
+
+#content-result div{
+    height: 100%;
+    background: transparent;
+    font-size: 1.3rem;
+    overflow-y: auto;
+}
+
+#content-result button{
+    margin-top: 10px;
+}
+
+.btn{
+    padding:  2% 15%;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn-copy{
+    padding:  5% 35%;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn-secodary{
+    background: transparent;
+    color:#0a3871;
+    border: 1px #0a3871 solid;
+    transition: color 2s, background .5s;    
+}
+
+.btn-secodary:hover{
+    background: #4577b4;
+    color: #fcfcfc;
+    border: 1px #fcfcfc solid;
+}
+
+.btn-primary{
+    background: #0a3871;
+    color: #ffffff;
+    border: 1px #0a3871 solid;
+    transition: color .5s, background .5s;
+}
+
+.btn-primary:hover{
+    background: #4577b4;
+    color: #fcfcfc;
+    border: 1px #fcfcfc solid;
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #section-encrypt{
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    #section-encrypt .content-encrypt{
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        /* margin-bottom: 10%; */
+        width: 100%;
+        height: 90%;
+    }
+
+    .content-encrypt textarea{
+        resize: none;
+        border: none;
+        /* width: 95%;
+        height: 75%; */
+        margin: 0 3rem;
+        font-size: 1.2rem;
+        color: #0a3871;
+        /* background: white; */
+    }
+
+    #section-result{
+        width: 100%;
+        height: 30vh;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    #result{
+        margin-right: 0;
+        width: 95%;
+        height: 95%;
+        background: #ffffff;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #content-empty{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #content-empty img{
+        display: none;
+    }
+    
+    #content-empty h3{
+        margin-top: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    #content-result div{
+        margin-top: 20px;
+        height: 100%;
+        background: transparent;
+        font-size: 1.2rem;
+        overflow-y: auto;
+    }
+
+    .btn-copy{
+        width: 100%;
+        padding:  2% 15%;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .div-btns{
+      width: 100%;
+      margin-top: 1.2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+}
